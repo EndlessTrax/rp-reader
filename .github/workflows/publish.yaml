@@ -6,7 +6,7 @@ on:
 
 jobs:
   test-workflow:
-    uses: ./.github/workflows/test.yaml@master
+    uses: ./.github/workflows/test.yaml
 
   publish:
     runs-on: ubuntu-latest 
