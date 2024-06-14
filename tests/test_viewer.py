@@ -35,6 +35,3 @@ def test_show_list(capsys):
         line_parts = line.split()
         assert line_parts[0].isnumeric()
         assert thing in line
-
-def test_failing_test():
-    assert False
