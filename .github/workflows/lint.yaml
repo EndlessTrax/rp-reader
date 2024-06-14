@@ -1,6 +1,6 @@
 name: Lint Python Code
 
-on: 
+on:
   pull_request:
     branches: [ master ]
   push:
@@ -22,6 +22,5 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install ruff
 
-      # Update output format to enable automatic inline annotations.
       - name: Run Ruff
         run: ruff check --output-format=github
